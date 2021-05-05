@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html{
+  height: 100%;
+}
+body{
+  margin: 0 ;
+  padding: 0 ;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411),
+                       rgba(0, 0, 0, 0.534)),url("img1.jpg");
+  font-family: 'Poppins', sans-serif;
+  }
+.form-box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width: 400px;
+  transform:translate(-50%, -50%);
+  background:rgba(8, 9, 14, 0.9);
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5) ;
+  padding:90px;
+}
+
+.form-box h2{
+  margin:20px 0px 50px;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 25px;
+  text-align:center;
+  color:#f4a803;
+}
+
+.form-box .admission-box{
+  position:relative;
+}
+
+.form-box .admission-box input{
+  width:100%;
+  padding:10px 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  outline: none;
+  color: #f9f9f9;;
+  border:none;
+  border-bottom: 1px solid #f9f9f9;
+  background: transparent;
+}
+
+.form-box .admission-box label{
+  position: absolute;
+  top:0;
+  left:0;
+  padding:10px 0;
+  font-size: 16px;
+  color:#f9f9f9;
+  pointer-events: none;
+  transition:.5s;
+}
+
+.form-box .admission-box input:focus ~ label,
+.form-box .admission-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f4a803;
+  font-size: 12px;
+}
+
+.form-box form a{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color:#f4a803;
+  padding:10px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-top:40px;
+  transition: .5s;
+  letter-spacing: 5px;
+}
+
+.form-box a:hover {
+  background:#f4a803;
+  color: #f9f9f9;
+  border-radius:5px;
+  box-shadow: 0 0 5px #f4a803,
+              0 0 25px #f4a803,
+              0 0 50px #f4a803,
+              0 0 100px #f4a803;
+}
+
+.form-box a span{
+  position:absolute;
+  display:block;
+}
+
+.form-box a span:nth-child(1){
+  top:0;
+  left:-100%;
+  width: 100%;
+  height:2px;
+  background: linear-gradient(90deg, transparent, #f4a803);
+  animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0%{
+    left:-100%;
+  }
+  50%,100%{
+    left:100%;
+  }
+}
+
+.form-box a span:nth-child(2){
+  top:-100%;
+  right:0;
+  height: 100%;
+  width:2px;
+  background: linear-gradient(180deg, transparent, #f4a803);
+  animation: btn-anim2 2s linear infinite;
+  animation-delay:.5s
+}
+
+@keyframes btn-anim2 {
+  0%{
+    top:-100%;
+  }
+  50%,100%{
+    top:100%;
+  }
+}
+
+.form-box a span:nth-child(3){
+  bottom:0;
+  right:-100%;
+  width: 100%;
+  height:2px;
+  background: linear-gradient(270deg, transparent, #f4a803);
+  animation: btn-anim3 2s linear infinite;
+  animation-delay:1s
+}
+
+@keyframes btn-anim3 {
+  0%{
+   right:-100%;
+  }
+  50%,100%{
+    right:100%;
+  }
+}
+
+.form-box a span:nth-child(4){
+  bottom:-100%;
+  left:0;
+  height: 100%;
+  width:2px;
+  background: linear-gradient(360deg, transparent, #f4a803);
+  animation: btn-anim4 2s linear infinite;
+  animation-delay:1.5s
+}
+
+@keyframes btn-anim4 {
+  0%{
+    bottom:-100%;
+  }
+  50%,100%{
+    bottom:100%;
+  }
+}
